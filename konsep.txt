@@ -1,0 +1,68 @@
+/* peach FF8A7F */
+/* ungu pastel 9A86B7 */
+/* ijo toska wardah 76CDC7 */
+
+#072f34 ijo toska super duper tua
+#118A95 ijo toska tua
+#3CD898 ijo muda
+#A9D3FF abu2 silver
+#4B49AC warna admin
+
+
+
+
+jenis
+1. pakaian
+2. linen (seprai, sarung bantal, selimut)
+3. handuk
+4. pakaian khusus (renda)
+
+
+
+
+Artikel
+https://www.orami.co.id/magazine/cara-menghilangkan-slime-di-baju
+https://www.detik.com/properti/tips-dan-panduan/d-7203817/4-bahan-yang-ampuh-hilangkan-bekas-cetakan-setrika-pada-pakaian
+https://lifestyle.sindonews.com/read/1297185/186/7-cara-agar-pakaian-wangi-seperti-laundry-pilih-deterjen-yang-tepat-1705050060
+https://pustakaalbahjah.com/blog/fiqih-mesin-cuci-panduan-praktis-mencuci-pakaian-menggunakan-mesin-cuci-sesuai-syariat-islam-2
+https://lifestyle.sindonews.com/read/1103071/166/ini-hal-yang-perlu-diperhatikan-saat-gunakan-layanan-laundry-1684505131?showpage=all
+
+Link Referensi web laundry
+Admin: https://www.azostech.com/produk/aplikasi-laundry-azlaundry
+Harga: https://www.mataharilaundry.com/daftar-harga-matahari-laundry/
+
+
+  =>  Template Name    : HighTech - IT Solutions Website Template
+
+  =>  Template Link    : https://htmlcodex.com/it-solutions-website-template
+
+  =>  Template License : https://htmlcodex.com/license (or read the LICENSE.txt file)
+
+  =>  Template Author  : HTML Codex
+
+  =>  Author Website   : https://htmlcodex.com
+
+
+
+/// DAFTAR HARGA 
+CUCI KERING LIPAT
+Sekali cuci 1-10 Satuan = Rp 15.000
+Sekali cuci 11-20 Satuan = Rp 25.000
+Sekali cuci 20+ Satuan = Rp 40.000
+
+CUCI SETRIKA
+Sekali cuci 1-10 Satuan = Rp 25.000
+Sekali cuci 11-20 Satuan = Rp 45.000
+Sekali cuci 20+ Satuan = Rp 70.000
+
+CUCI KILAT
+Sekali cuci 1-20 Satuan = Rp 30.000
+Sekali cuci 20+ Satuan = Rp 55.000
+
+
+
+
+
+
+
+

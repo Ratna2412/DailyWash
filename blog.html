@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>e-Laundy Daily Wash</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Spinner Start -->
+        <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Topbar Start -->
+        <div class="container-fluid bg-dark py-2 d-none d-md-flex" style="top: 0; position: fixed;  z-index: 1001;">
+            <div class="container">
+                <div class="d-flex justify-content-between topbar">
+                    <div class="top-info">
+                        <small class="me-3 text-white-50"><a href="#"><i class="fas fa-map-marker-alt me-2 text-secondary"></i></a>Gubeng Airlangga II, Surabaya</small>
+                        <small class="me-3 text-white-50"><a href="#"><i class="fas fa-envelope me-2 text-secondary"></i></a>daiwash@gmail.com</small>
+                    </div>
+                    <div id="note" class="text-secondary d-none d-xl-flex"><small>Diskon 30% member baru</small></div>
+                    <div class="top-link">
+                        <a href="index.html" class="btn btn-primary btn-sm rounded-pill me-2">Keluar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+        
+        <!-- Navbar Start -->
+        <div class="container-fluid bg-primary">
+
+            <div class="container">
+                <nav class="navbar navbar-dark navbar-expand-lg py-0">
+                    <a href="indexlogin.html" class="navbar-brand">
+                        <h1 class="text-white fw-bold d-block">Daily<span class="text-secondary">Wash</span> </h1>
+                        <!-- <img src="img/logonew.png" alt="HighTech Logo" class="img-fluid"> -->
+                    </a>
+                    <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
+                        <div class="navbar-nav ms-auto mx-xl-auto p-0">
+                            <a href="indexlogin.html" class="nav-item nav-link active">Beranda</a>
+                            <a href="about.html" class="nav-item nav-link">Tentang Kami</a>
+                            <a href="project.html" class="nav-item nav-link">Layanan</a>
+                            <!-- <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Layanan</a>
+                                <div class="dropdown-menu rounded">
+                                    <a href="project.html" class="dropdown-item">Layanan</a>
+                                    <a href="#" class="dropdown-item">Keranjang</a>
+                                    <a href="#" class="dropdown-item">Pembayaran</a>
+                                    <a href="#" class="dropdown-item">Riwayat Pembayaran</a>
+                                </div>
+                            </div> -->
+                            <a href="blog.html" class="nav-item nav-link">Artikel</a>
+                            <a href="keranjang.html" class="nav-item nav-link d-md-none">Keranjang</a>
+                            <a href="history_transaksi.html" class="nav-item nav-link d-md-none">Riwayat Pemesanan</a>
+                            <a href="index.html" class="nav-item nav-link d-md-none">Keluar</a>
+                        </div>
+                    </div>
+                    <div class="d-none d-xl-flex flex-shirink-0">
+                        <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4">
+                            <a href="" class="position-relative animated tada infinite">
+                                <i class="fa fa-phone-alt text-white fa-2x"></i>
+                                <div class="position-absolute" style="top: -7px; left: 20px;">
+                                    <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="d-flex flex-column pe-4 border-end">
+                            <span class="text-white-50">Punya pertanyaan?</span>
+                            <span class="text-secondary">Hubungi: (031) 5678910</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center ms-4 ">
+                            <!-- <a href="#"><i class="fa-regular fa-cart-shopping"></i></a> -->
+                            <a href="keranjang.html"><i class="bi bi-cart text-white fa-2x" style="font-size: 25px;"></i> </a>
+                            <a href="history_transaksi.html"><i class="bi bi-clock-history text-white fa-2x" style="font-size: 25px; margin-left: 20px;"></i> </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+        
+        <!-- Page Header Start -->
+        <div class="container-fluid page-header py-5">
+            <div class="container text-center py-5">
+                <h1 class="display-2 text-white mb-4 animated slideInDown">Artikel</h1>
+                <nav aria-label="breadcrumb animated slideInDown">
+                    <ol class="breadcrumb justify-content-center mb-0">
+                        <li class="breadcrumb-item"><a href="#">Beranda</a></li>
+                        <li class="breadcrumb-item"><a href="#">Artikel</a></li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- Page Header End -->
+
+
+         <!-- Fact Start -->
+         <div class="container-fluid bg-secondary py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 wow fadeIn" data-wow-delay=".1s">
+                        <div class="d-flex counter">
+                            <h1 class="me-3 text-primary counter-value">7</h1>
+                            <h5 class="text-white mt-1">Tim profesional</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 wow fadeIn" data-wow-delay=".3s">
+                        <div class="d-flex counter">
+                            <h1 class="me-3 text-primary counter-value">15</h1>
+                            <h5 class="text-white mt-1">Jumlah pelanggan sehari</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 wow fadeIn" data-wow-delay=".5s">
+                        <div class="d-flex counter">
+                            <h1 class="me-3 text-primary counter-value">75</h1>
+                            <h5 class="text-white mt-1">kilogram cucian sehari</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 wow fadeIn" data-wow-delay=".7s">
+                        <div class="d-flex counter">
+                            <h1 class="me-3 text-primary counter-value">95</h1>
+                            <h5 class="text-white mt-1">% tingkat kepuasan pelanggan</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fact End -->
+
+
+        <!-- Blog Start -->
+        <div id="artikel" class="container-fluid blog py-5 mb-5">
+            <div class="container">
+                <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                    <h5 class="text-primary">Artikel</h5>
+                    <h1>Artikel dan Berita Terkini</h1>
+                </div>
+                <div class="row g-5 justify-content-center">
+                    <a href="detailblog1.html" class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".7s">
+                        <div class="blog-item position-relative bg-light rounded">
+                            <img src="img/blogslime.png" class="img-fluid w-100 rounded-top" alt="">
+                            <!-- <span class="position-absolute px-4 py-3 bg-primary text-white rounded" style="top: -28px; right: 20px;">Mobile App</span> -->
+                            <!-- <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
+                                <div class="blog-icon btn btn-secondary px-3 rounded-pill my-auto">
+                                    <a href="" class="btn text-white ">Read More</a>
+                                </div>
+                                <div class="blog-btn-icon btn btn-secondary px-4 py-3 rounded-pill ">
+                                    <div class="blog-icon-1">
+                                        <p class="text-white px-2">Share<i class="fa fa-arrow-right ms-3"></i></p>
+                                    </div>
+                                    <div class="blog-icon-2">
+                                        <a href="" class="btn me-1"><i class="fab fa-facebook-f text-white"></i></a>
+                                        <a href="" class="btn me-1"><i class="fab fa-twitter text-white"></i></a>
+                                        <a href="" class="btn me-1"><i class="fab fa-instagram text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
+                                <img src="img/profilkosong.jpg" class="img-fluid rounded-circle border border-4 border-white mb-3"style="height: 110px" alt="">
+                                <h5 class="">Bella Nurmaya Putri</h5>
+                                <p class="py-2">Cara Menghilangkan Noda Slime pada Pakaian</p>
+                                <span class="text-secondary">7 April 2024</span>
+                            </div>
+                            <!-- <div class="blog-coments d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
+                                <a href="" class="text-white"><small><i class="fas fa-share me-2 text-secondary"></i>5324 Share</small></a>
+                                <a href="" class="text-white"><small><i class="fa fa-comments me-2 text-secondary"></i>5 Comments</small></a>
+                            </div> -->
+                        </div>
+                    </a>
+                    <a href="detailblog2.html" class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".5s">
+                        <div class="blog-item position-relative bg-light rounded">
+                            <img href="detailblog2.html" src="img/blogsetrika.png" class="img-fluid w-100 rounded-top" alt="">
+                            <!-- <span class="position-absolute px-4 py-3 bg-primary text-white rounded" style="top: -28px; right: 20px;">Development</span> -->
+                            <!-- <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
+                                <div class="blog-icon btn btn-secondary px-3 rounded-pill my-auto">
+                                    <a href="" class="btn text-white ">Read More</a>
+                                </div>
+                                <div class="blog-btn-icon btn btn-secondary px-4 py-3 rounded-pill ">
+                                    <div class="blog-icon-1">
+                                        <p class="text-white px-2">Share<i class="fa fa-arrow-right ms-3"></i></p>
+                                    </div>
+                                    <div class="blog-icon-2">
+                                        <a href="" class="btn me-1"><i class="fab fa-facebook-f text-white"></i></a>
+                                        <a href="" class="btn me-1"><i class="fab fa-twitter text-white"></i></a>
+                                        <a href="" class="btn me-1"><i class="fab fa-instagram text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
+                                <img src="img/profilkosong.jpg" class="img-fluid rounded-circle border border-4 border-white mb-3"style="height: 110px" alt="">
+                                <h5 class="">Sekar Aqillah Indraswari</h5>
+                                <p class="py-2">4 Bahan yang Ampuh Hilangkan Bekas Cetakan Setrika pada Pakaian</p>
+                                <span class="text-secondary">21 Februari 2024</span>
+                            </div>
+                            <!-- <div class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
+                                <a href="" class="text-white"><small><i class="fas fa-share me-2 text-secondary"></i>5324 Share</small></a>
+                                <a href="" class="text-white"><small><i class="fa fa-comments me-2 text-secondary"></i>5 Comments</small></a>
+                            </div> -->
+                        </div>
+                    </a>
+                    <a href="detailblog3.html" class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".7s">
+                        <div class="blog-item position-relative bg-light rounded">
+                            <img src="img/blogpakaianwangi.png" class="img-fluid w-100 rounded-top" alt="">
+                            <!-- <span class="position-absolute px-4 py-3 bg-primary text-white rounded" style="top: -28px; right: 20px;">Mobile App</span> -->
+                            <!-- <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
+                                <div class="blog-icon btn btn-secondary px-3 rounded-pill my-auto">
+                                    <a href="" class="btn text-white ">Read More</a>
+                                </div>
+                                <div class="blog-btn-icon btn btn-secondary px-4 py-3 rounded-pill ">
+                                    <div class="blog-icon-1">
+                                        <p class="text-white px-2">Share<i class="fa fa-arrow-right ms-3"></i></p>
+                                    </div>
+                                    <div class="blog-icon-2">
+                                        <a href="" class="btn me-1"><i class="fab fa-facebook-f text-white"></i></a>
+                                        <a href="" class="btn me-1"><i class="fab fa-twitter text-white"></i></a>
+                                        <a href="" class="btn me-1"><i class="fab fa-instagram text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
+                                <img src="img/profilkosong.jpg" class="img-fluid rounded-circle border border-4 border-white mb-3"style="height: 110px" alt="">
+                                <h5 class="">Andre Purwanto</h5>
+                                <p class="py-2">7 Cara agar Pakaian Wangi, Pilih Deterjen yang Tepat!</p>
+                                <span class="text-secondary">12 Januari 2024</span>
+                            </div>
+                            <!-- <div class="blog-coments d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
+                                <a href="" class="text-white"><small><i class="fas fa-share me-2 text-secondary"></i>5324 Share</small></a>
+                                <a href="" class="text-white"><small><i class="fa fa-comments me-2 text-secondary"></i>5 Comments</small></a>
+                            </div> -->
+                        </div>
+                    </a>
+                    <a href="detailblog4.html" class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s">
+                        <div class="blog-item position-relative bg-light rounded">
+                            <img src="img/blogfikih.png" class="img-fluid w-100 rounded-top" alt="">
+                            <!-- <span class="position-absolute px-4 py-3 bg-primary text-white rounded" style="top: -28px; right: 20px;">Web Design</span> -->
+                            <!-- <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
+                                <div class="blog-icon btn btn-secondary px-3 rounded-pill my-auto">
+                                    <a href="" class="btn text-white">Read More</a>
+                                </div>
+                                <div class="blog-btn-icon btn btn-secondary px-4 py-3 rounded-pill ">
+                                    <div class="blog-icon-1">
+                                        <p class="text-white px-2">Share<i class="fa fa-arrow-right ms-3"></i></p>
+                                    </div>
+                                    <div class="blog-icon-2">
+                                        <a href="" class="btn me-1"><i class="fab fa-facebook-f text-white"></i></a>
+                                        <a href="" class="btn me-1"><i class="fab fa-twitter text-white"></i></a>
+                                        <a href="" class="btn me-1"><i class="fab fa-instagram text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
+                                <img src="img/buyayahya.png" class="img-fluid rounded-circle border border-4 border-white mb-3"style="height: 110px" alt="">
+                                <h5 class="">Buya Yahya</h5>
+                                <p class="py-2">Fiqih mesin Cuci: Panduan Praktis Mencuci Pakaian Menggunakan Mesin Cuci Sesuai Syariat Islam</p>
+                                <span class="text-secondary">17 Juli 2023</span>
+                            </div>
+                            <!-- <div class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
+                                <a href="" class="text-white"><small><i class="fas fa-share me-2 text-secondary"></i>5324 Share</small></a>
+                                <a href="" class="text-white"><small><i class="fa fa-comments me-2 text-secondary"></i>5 Comments</small></a>
+                            </div> -->
+                        </div>
+                    </a>
+                    <a href="detailblog5.html" class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".7s">
+                        <div class="blog-item position-relative bg-light rounded">
+                            <img src="img/blogalatlaundry.png" class="img-fluid w-100 rounded-top" alt="">
+                            <!-- <span class="position-absolute px-4 py-3 bg-primary text-white rounded" style="top: -28px; right: 20px;">Mobile App</span> -->
+                            <!-- <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
+                                <div class="blog-icon btn btn-secondary px-3 rounded-pill my-auto">
+                                    <a href="" class="btn text-white ">Read More</a>
+                                </div>
+                                <div class="blog-btn-icon btn btn-secondary px-4 py-3 rounded-pill ">
+                                    <div class="blog-icon-1">
+                                        <p class="text-white px-2">Share<i class="fa fa-arrow-right ms-3"></i></p>
+                                    </div>
+                                    <div class="blog-icon-2">
+                                        <a href="" class="btn me-1"><i class="fab fa-facebook-f text-white"></i></a>
+                                        <a href="" class="btn me-1"><i class="fab fa-twitter text-white"></i></a>
+                                        <a href="" class="btn me-1"><i class="fab fa-instagram text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
+                                <img src="img/wahyunugroho.jpg" class="img-fluid rounded-circle border border-4 border-white mb-3"style="height: 110px" alt="">
+                                <h5 class="">Wahyu Nugroho</h5>
+                                <p class="py-2">Ini Hal yang Perlu Diperhatikan saat Gunakan Layanan Laundry</p>
+                                <span class="text-secondary">19 Mei 2023</span>
+                            </div>
+                            <!-- <div class="blog-coments d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
+                                <a href="" class="text-white"><small><i class="fas fa-share me-2 text-secondary"></i>5324 Share</small></a>
+                                <a href="" class="text-white"><small><i class="fa fa-comments me-2 text-secondary"></i>5 Comments</small></a>
+                            </div> -->
+                        </div>
+                    </a>
+        
+                </div>
+            </div>
+        </div>
+        <!-- Blog End -->
+
+            <!-- Footer Start -->
+            <div class="container-fluid footer bg-dark wow fadeIn" data-wow-delay=".3s">
+                <div class="container pt-5 pb-4">
+                    <div class="row g-5">
+                        <div class="col-lg-3 col-md-6">
+                            <a href="index.html">
+                                <!-- <img src="img/logonew.png" alt="HighTech Logo" class="img-fluid" style="height: 60px;"> -->
+                                <h1 class="text-white fw-bold d-block">Daily<span class="text-secondary">Wash</span> </h1>
+                            </a>
+                            <p class="mt-4 text-light">Menyediakan solusi laundry yang bersih, rapi, dan cepat dengan teknologi canggih dan tim profesional.</p>
+                            <div class="d-flex hightech-link">
+                                <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-facebook-f text-primary"></i></a>
+                                <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-twitter text-primary"></i></a>
+                                <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-instagram text-primary"></i></a>
+                                <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-0"><i class="fab fa-linkedin-in text-primary"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <a href="#" class="h3 text-secondary">Link</a>
+                            <div class="mt-4 d-flex flex-column short-link">
+                                <a href="indexlogin.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Beranda</a>
+                                <a href="about.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Tentang Kami</a>
+                                <a href="project.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Layanan</a>
+                                <a href="blog.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Artikel</a>
+                            </div>
+                        </div>
+                        <!-- <div class="col-lg-3 col-md-6">
+                            <a href="#" class="h3 text-secondary">Help Link</a>
+                            <div class="mt-4 d-flex flex-column help-link">
+                                <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Terms Of use</a>
+                                <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Privacy Policy</a>
+                                <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Helps</a>
+                                <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>FQAs</a>
+                                <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contact</a>
+                            </div>
+                        </div> -->
+                        <div class="col-lg-3 col-md-6">
+                            <a href="#" class="h3 text-secondary">Hubungi Kami</a>
+                            <div class="text-white mt-4 d-flex flex-column contact-link">
+                                <a href="#" class="pb-3 text-light border-bottom border-primary"><i class="fas fa-map-marker-alt text-secondary me-2"></i> Gubeng Airlangga II, Surabaya</a>
+                                <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-phone-alt text-secondary me-2"></i> (031) 5678910</a>
+                                <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-envelope text-secondary me-2"></i> daiwash@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="text-light mt-5 mb-4">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start">
+                            <span class="text-light"><a href="#" class="text-secondary"><i class="fas fa-copyright text-secondary me-2"></i>2024 DailyWash</a>, All right reserved.</span>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                            <!-- <span class="text-light">Designed By<a href="https://htmlcodex.com" class="text-secondary">HTML Codex</a> Distributed By <a href="https://themewagon.com">ThemeWagon</a></span> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i class="fa fa-arrow-up text-white"></i></a>
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+
+</html>

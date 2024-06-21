@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Admin DailyWash</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="../../vendors/feather/feather.css">
+  <link rel="stylesheet" href="../../vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../../css/admin/style.css">
+  <link rel="stylesheet" href="../../css/admin/tabelproduk.css">
+  <link rel="stylesheet" href="../../css/admin/modalproduk.css">
+  <!-- endinject -->
+  <!-- <link rel="shortcut icon" href="../../images/favicon.png" /> -->
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:../../partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo mr-5" style="font-weight: 750;" href="indexadmin.html">DailyWash</a> 
+        <!-- <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="../../images/logo-mini.svg" alt="logo"/></a> -->
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+        <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+          <span class="icon-menu"></span>
+        </button>
+        <ul class="navbar-nav mr-lg-2">
+          <li class="nav-item nav-search d-none d-lg-block">
+            <div class="input-group">
+              <div class="input-group-prepend hover-cursor" id="navbar-search-icon">
+                <span class="input-group-text" id="search">
+                  <i class="icon-search"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" id="navbar-search-input" placeholder="Cari" aria-label="search" aria-describedby="search">
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav navbar-nav-right">
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+              <i class="icon-bell mx-0"></i>
+              <span class="count"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+              <p class="mb-0 font-weight-normal float-left dropdown-header">Notifikasi</p>
+              <!-- <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-success">
+                    <i class="ti-info-alt mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Application Error</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    Just now
+                  </p>
+                </div>
+              </a> -->
+              <!-- <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-warning">
+                    <i class="ti-settings mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Settings</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    Private message
+                  </p>
+                </div>
+              </a> -->
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-info">
+                    <i class="ti-user mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Pendaftaran pengguna baru</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    10 menit yang lalu
+                  </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item nav-profile dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
+              <img src="../../img/dashboard/ratna.png" alt="profile"/>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+              <a class="dropdown-item">
+                <i class="ti-settings text-primary"></i>
+                Pengaturan
+              </a>
+              <a href="../../auth.html" class="dropdown-item">
+                <i class="ti-power-off text-primary"></i>
+                Keluar
+              </a>
+            </div>
+          </li>
+          <li class="nav-item nav-settings d-none d-lg-flex">
+            <a class="nav-link" href="#">
+              <i class="icon-ellipsis"></i>
+            </a>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="icon-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:../../partials/_settings-panel.html -->
+      <div class="theme-setting-wrapper">
+        <div id="settings-trigger"><i class="ti-settings"></i></div>
+        <div id="theme-settings" class="settings-panel">
+          <i class="settings-close ti-close"></i>
+          <p class="settings-heading">SIDEBAR SKINS</p>
+          <div class="sidebar-bg-options selected" id="sidebar-light-theme"><div class="img-ss rounded-circle bg-light border mr-3"></div>Light</div>
+          <div class="sidebar-bg-options" id="sidebar-dark-theme"><div class="img-ss rounded-circle bg-dark border mr-3"></div>Dark</div>
+          <p class="settings-heading mt-2">HEADER SKINS</p>
+          <div class="color-tiles mx-0 px-4">
+            <div class="tiles success"></div>
+            <div class="tiles warning"></div>
+            <div class="tiles danger"></div>
+            <div class="tiles info"></div>
+            <div class="tiles dark"></div>
+            <div class="tiles default"></div>
+          </div>
+        </div>
+      </div>
+      <div id="right-sidebar" class="settings-panel">
+        <i class="settings-close ti-close"></i>
+        <ul class="nav nav-tabs border-top" id="setting-panel" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="todo-tab" data-toggle="tab" href="#todo-section" role="tab" aria-controls="todo-section" aria-expanded="true">Agenda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="chats-tab" data-toggle="tab" href="#chats-section" role="tab" aria-controls="chats-section">Chat</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="setting-content">
+          <div class="tab-pane fade show active scroll-wrapper" id="todo-section" role="tabpanel" aria-labelledby="todo-section">
+            <div class="add-items d-flex px-3 mb-0">
+              <form class="form w-100">
+                <div class="form-group d-flex">
+                  <input type="text" class="form-control todo-list-input" placeholder="Tulis Agenda">
+                  <button type="submit" class="add btn btn-primary todo-list-add-btn" id="add-task">Selesai</button>
+                </div>
+              </form>
+            </div>
+            <div class="list-wrapper px-3">
+              <ul class="d-flex flex-column-reverse todo-list">
+                <!-- <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Rapat bersama tim jam 17.00 WIB
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Nambah persediaan deterjen dan pewangi 
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li> -->
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Rapat bersama tim jam 17.00 WIB
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li class="completed">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox" checked>
+                      Nambah persediaan deterjen dan pewangi 
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li class="completed">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox" checked>
+                      Menghubungi tukang servis mesin cuci
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+              </ul>
+            </div>
+            <h4 class="px-3 text-muted mt-5 font-weight-light mb-0">Acara</h4>
+            <div class="events pt-4 px-3">
+              <div class="wrapper d-flex mb-2">
+                <i class="ti-control-record text-primary mr-2"></i>
+                <span>12 Agustus 2024</span>
+              </div>
+              <p class="mb-0 font-weight-thin text-gray">Ulang tahun DailyWash ke 12 tahun</p>
+              <!-- <p class="text-gray mb-0">The total number of sessions</p> -->
+            </div>
+            <!-- <div class="events pt-4 px-3">
+              <div class="wrapper d-flex mb-2">
+                <i class="ti-control-record text-primary mr-2"></i>
+                <span>Feb 7 2018</span>
+              </div>
+              <p class="mb-0 font-weight-thin text-gray">Meeting with Alisa</p>
+              <p class="text-gray mb-0 ">Call Sarah Graves</p>
+            </div> -->
+          </div>
+          <!-- To do section tab ends -->
+          <div class="tab-pane fade" id="chats-section" role="tabpanel" aria-labelledby="chats-section">
+            <div class="d-flex align-items-center justify-content-between border-bottom">
+              <p class="settings-heading border-top-0 mb-3 pl-3 pt-0 border-bottom-0 pb-0">Tim Daily Wash</p>
+              <small class="settings-heading border-top-0 mb-3 pt-0 border-bottom-0 pb-0 pr-3 font-weight-normal">Lihat Semua</small>
+            </div>
+            <ul class="chat-list">
+              <li class="list active">
+                <div class="profile"><img src="../../img/fairuz.png" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Fairuz Zahira</p>
+                  <p>Online</p>
+                </div>
+                <small class="text-muted my-auto">19 menit yang lalu</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="../../img/amel.png" alt="image"><span class="offline"></span></div>
+                <div class="info">
+                  <div class="wrapper d-flex">
+                    <p>Amelia Nur Indah</p>
+                  </div>
+                  <p>Offline</p>
+                </div>
+                <div class="badge badge-success badge-pill my-auto mx-2">4</div>
+                <small class="text-muted my-auto">Kemarin</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="../../img/lintangs.png" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Lintang Sekar</p>
+                  <p>Online</p>
+                </div>
+                <small class="text-muted my-auto">Kemarin</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="../../img/firli.png" alt="image"><span class="offline"></span></div>
+                <div class="info">
+                  <p>Firli Satria</p>
+                  <p>Offline</p>
+                </div>
+                <small class="text-muted my-auto">Kemarin</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="../../img/kartika.png" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Kartika Nur</p>
+                  <p>Online</p>
+                </div>
+                <small class="text-muted my-auto">Kemarin</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="../../img/cessa.png" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Lady Cessa</p>
+                  <p>Online</p>
+                </div>
+                <small class="text-muted my-auto">Kemarin</small>
+              </li>
+            </ul>
+          </div>
+          <!-- chat tab ends -->
+        </div>
+      </div>
+      <!-- partial -->
+      <!-- partial:../../partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../../indexadmin.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <i class="icon-bar-graph menu-icon"></i>
+              <span class="menu-title">Data Master</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../../pages/master/pelanggan.html">Data Pelanggan</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/master/produk.html">Data Produk</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/master/artikel.html">Data Artikel</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/master/satuan.html">Data Satuan</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/transaksi/transaksi.html">
+              <i class="icon-paper menu-icon"></i>
+              <span class="menu-title">Transaksi</span>
+            </a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <i class="icon-layout menu-icon"></i>
+              <span class="menu-title">UI Elements</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/buttons.html">Buttons</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/dropdowns.html">Dropdowns</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/typography.html">Typography</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
+              <i class="icon-columns menu-icon"></i>
+              <span class="menu-title">Form elements</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="form-elements">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="../../pages/forms/basic_elements.html">Basic Elements</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
+              <i class="icon-bar-graph menu-icon"></i>
+              <span class="menu-title">Charts</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="charts">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../../pages/charts/chartjs.html">ChartJs</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
+              <i class="icon-grid-2 menu-icon"></i>
+              <span class="menu-title">Tables</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="tables">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../../pages/tables/basic-table.html">Basic table</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
+              <i class="icon-contract menu-icon"></i>
+              <span class="menu-title">Icons</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="icons">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../../pages/icons/mdi.html">Mdi icons</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+              <i class="icon-head menu-icon"></i>
+              <span class="menu-title">User Pages</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="auth">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../../pages/samples/login.html"> Login </a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/samples/register.html"> Register </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#error" aria-expanded="false" aria-controls="error">
+              <i class="icon-ban menu-icon"></i>
+              <span class="menu-title">Error pages</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="error">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../../pages/samples/error-404.html"> 404 </a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/samples/error-500.html"> 500 </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/documentation/documentation.html">
+              <i class="icon-paper menu-icon"></i>
+              <span class="menu-title">Documentation</span>
+            </a>
+          </li> -->
+        </ul>
+      </nav>
+
+
+
+
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="container">
+          <button class="btn-tambah">+ Tambah</button>
+          <table>
+              <thead>
+                  <tr>
+                      <th>#</th>
+                      <th>Gambar</th>
+                      <th>Nama Produk</th>
+                      <th>Deskripsi</th>
+                      <th>Aksi</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <!-- Example row, repeat for each data row -->
+                  <tr>
+                      <td>1</td>
+                      <td><img src="../../img/cucikeringlipat.jpg" alt="gambar produk"></td>
+                      <td>Cuci Kering Lipat</td>
+                      <td>Laundry kami menawarkan layanan cuci kering lipat yang profesional dan efisien, memastikan pakaian Anda bersih, kering, dan rapi terlipat dengan sempurna. Dengan menggunakan teknologi canggih dan deterjen berkualitas tinggi, kami menjamin hasil yang memuaskan serta pengembalian pakaian tepat waktu.<br>
+
+                        Daftar Harga:<br>
+                        Sekali cuci 1-10 Satuan = Rp 15.000<br>
+                        Sekali cuci 11-20 Satuan = Rp 25.000<br>
+                        Sekali cuci 20+ Satuan = Rp 40.000
+                      </td>
+                      <td>
+                        <button class="btn edit">Edit</button>
+                        <button class="btn hapus">Hapus</button>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td><img src="../../img/cucisetrika.png" alt="gambar produk"></td>
+                    <td>Cuci Setrika</td>
+                    <td>Laundry kami menawarkan layanan cuci setrika yang profesional dan efisien, memastikan pakaian Anda bersih, rapi, dan wangi. Dengan menggunakan teknologi canggih dan deterjen berkualitas tinggi, kami menjamin hasil yang memuaskan serta pengembalian pakaian tepat waktu.<br>
+
+                        Daftar Harga:<br>
+                        Sekali cuci 1-10 Satuan = Rp 25.000<br>
+                        Sekali cuci 11-20 Satuan = Rp 45.000<br>
+                        Sekali cuci 21-50 Satuan = Rp 70.000
+                    </td>
+                    <td>
+                      <button class="btn edit">Edit</button>
+                      <button class="btn hapus">Hapus</button>
+                    </td>
+                  </tr>  
+                  <tr>
+                    <td>3</td>
+                    <td><img src="../../img/cucikilat.jpg" alt="gambar produk"></td>
+                    <td>Cuci Kilat</td>
+                    <td>Laundry kami menawarkan layanan cuci kilat yang profesional dan efisien, memastikan pakaian Anda bersih, cepat, dan rapi terlipat dengan sempurna. Dengan menggunakan teknologi canggih dan deterjen berkualitas tinggi, kami menjamin hasil yang memuaskan serta pengembalian pakaian tepat waktu.<br>
+
+                        Daftar Harga:<br>
+                        Sekali cuci 1-20 Satuan = Rp 30.000<br>
+                        Sekali cuci 20+ Satuan = Rp 55.000
+                    </td>
+                    <td>
+                      <button class="btn edit">Edit</button>
+                      <button class="btn hapus">Hapus</button>
+                    </td>
+                  </tr>        
+                  <!-- Repeat rows as needed -->
+              </tbody>
+          </table>
+          <div class="pagination">
+              <span>Menampilkan 1 hingga 3 dari 3 data</span>
+              <!-- <div class="pages">
+                  <button class="page">Sebelumnya</button>
+                  <button class="page active">1</button>
+                  <button class="page">2</button>
+                  <button class="page">3</button>
+                  <button class="page">Selanjutnya</button>
+              </div> -->
+          </div>
+      </div>
+
+
+
+      <!-- Modal Tambah -->
+      <div id="tambahModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h5>Tambah Data</h5>
+          <!-- Form Tambah Data -->
+          <form>
+            <div class="form-group">
+                <label for="gambar">Gambar</label>
+                <input type="file" class="form-control" id="gambar" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <label for="namaproduk">Nama Produk</label>
+                <input type="text" class="form-control" id="namaproduk" placeholder="Masukkan nama produk" minlength="4" autocomplete="off" required>
+            </div>
+            <div class="form-group">
+                <label for="deskripsi">Deskripsi</label>
+                <textarea class="form-control" id="deskripsi" placeholder="Masukkan deskripsi produk" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Simpan</button>
+        </form>        
+        </div>
+      </div>
+
+      <!-- Modal Edit -->
+      <div id="editModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h5>Edit Data</h5>
+          <!-- Form Edit Data -->
+          <form>
+            <div class="form-group">
+                <label for="editGambar">Gambar</label>
+                <input type="file" class="form-control" id="editGambar" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <label for="editNamaProduk">Nama Produk</label>
+                <input type="text" class="form-control" id="editNamaProduk" placeholder="Masukkan nama produk" minlength="4" autocomplete="off" required>
+            </div>
+            <div class="form-group">
+                <label for="editDeskripsi">Deskripsi</label>
+                <textarea class="form-control" id="editDeskripsi" placeholder="Masukkan deskripsi produk" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Simpan</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Modal Hapus -->
+      <div id="hapusModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h5>Hapus Data</h5>
+          <p>Apakah Anda yakin ingin menghapus data ini?</p>
+          <button id="btnDelete" class="btn btn-danger">Hapus</button>
+          <button class="btn btn-secondary" >Batal</button>
+        </div>
+      </div>
+
+        <!-- content-wrapper ends -->
+        <!-- partial:../../partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2024.  </span>
+              <!-- Premium <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap admin template</a> from BootstrapDash. All rights reserved.</span>  -->
+            <!-- <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="ti-heart text-danger ml-1"></i></span> -->
+          </div>
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <!-- <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Distributed by <a href="https://www.themewagon.com/" target="_blank">Themewagon</a></span>  -->
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="../../vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="../../js/off-canvas.js"></script>
+  <script src="../../js/hoverable-collapse.js"></script>
+  <script src="../../js/template.js"></script>
+  <script src="../../js/settings.js"></script>
+  <script src="../../js/todolist.js"></script>
+  <script src="../../js/modalproduk.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <!-- End custom js for this page-->
+</body>
+
+</html>

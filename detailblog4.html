@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>e-Laundy Daily Wash</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Spinner Start -->
+        <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Topbar Start -->
+        <div class="container-fluid bg-dark py-2 d-none d-md-flex" style="top: 0; position: fixed;  z-index: 1001;">
+            <div class="container">
+                <div class="d-flex justify-content-between topbar">
+                    <div class="top-info">
+                        <small class="me-3 text-white-50"><a href="#"><i class="fas fa-map-marker-alt me-2 text-secondary"></i></a>Gubeng Airlangga II, Surabaya</small>
+                        <small class="me-3 text-white-50"><a href="#"><i class="fas fa-envelope me-2 text-secondary"></i></a>daiwash@gmail.com</small>
+                    </div>
+                    <div id="note" class="text-secondary d-none d-xl-flex"><small>Diskon 30% member baru</small></div>
+                    <div class="top-link">
+                        <a href="index.html" class="btn btn-primary btn-sm rounded-pill me-2">Keluar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+        
+        <!-- Navbar Start -->
+        <div class="container-fluid bg-primary">
+
+            <div class="container">
+                <nav class="navbar navbar-dark navbar-expand-lg py-0">
+                    <a href="indexlogin.html" class="navbar-brand">
+                        <h1 class="text-white fw-bold d-block">Daily<span class="text-secondary">Wash</span> </h1>
+                        <!-- <img src="img/logonew.png" alt="HighTech Logo" class="img-fluid"> -->
+                    </a>
+                    <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
+                        <div class="navbar-nav ms-auto mx-xl-auto p-0">
+                            <a href="indexlogin.html" class="nav-item nav-link active">Beranda</a>
+                            <a href="about.html" class="nav-item nav-link">Tentang Kami</a>
+                            <a href="project.html" class="nav-item nav-link">Layanan</a>
+                            <!-- <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Layanan</a>
+                                <div class="dropdown-menu rounded">
+                                    <a href="project.html" class="dropdown-item">Layanan</a>
+                                    <a href="#" class="dropdown-item">Keranjang</a>
+                                    <a href="#" class="dropdown-item">Pembayaran</a>
+                                    <a href="#" class="dropdown-item">Riwayat Pembayaran</a>
+                                </div>
+                            </div> -->
+                            <a href="blog.html" class="nav-item nav-link">Artikel</a>
+                            <a href="keranjang.html" class="nav-item nav-link d-md-none">Keranjang</a>
+                            <a href="history_transaksi.html" class="nav-item nav-link d-md-none">Riwayat Pemesanan</a>
+                            <a href="index.html" class="nav-item nav-link d-md-none">Keluar</a>
+                        </div>
+                    </div>
+                    <div class="d-none d-xl-flex flex-shirink-0">
+                        <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4">
+                            <a href="" class="position-relative animated tada infinite">
+                                <i class="fa fa-phone-alt text-white fa-2x"></i>
+                                <div class="position-absolute" style="top: -7px; left: 20px;">
+                                    <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="d-flex flex-column pe-4 border-end">
+                            <span class="text-white-50">Punya pertanyaan?</span>
+                            <span class="text-secondary">Hubungi: (031) 5678910</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center ms-4 ">
+                            <!-- <a href="#"><i class="fa-regular fa-cart-shopping"></i></a> -->
+                            <a href="keranjang.html"><i class="bi bi-cart text-white fa-2x" style="font-size: 25px;"></i> </a>
+                            <a href="history_transaksi.html"><i class="bi bi-clock-history text-white fa-2x" style="font-size: 25px; margin-left: 20px;"></i> </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+        <!-- Detail Blog -->
+        <div class="container-detail-article mt-5">
+            <h2>Fiqih mesin Cuci: Panduan Praktis Mencuci Pakaian Menggunakan Mesin Cuci Sesuai Syariat Islam</h2>
+            <div class="detail-article-meta">
+                <div class="author">
+                    <img src="img/buyayahya.png" alt="Author Photo">
+                    <span>Buya Yahya</span>
+                </div>
+                <span class="date">17 Juli 2023</span>
+            </div>
+            <div class="detail-article-image">
+                <img src="img/fiqih1detailblog.png" alt="wangi">
+            </div>
+            <div class="detail-article-content">
+                <p>Mesin cuci merupakan salah satu alat yang saat ini banyak digunakan oleh masyarakat untuk membersihkan pakaian. Keberadaan mesin cuci ini sangat membantu orang-orang yang hendak membersihkan pakaiannya sebab mesin cuci dapat membersihkan pakaian yang banyak dengan waktu yang singkat.</p>
+                <p>Namun dalam proses mencuci tersebut seringkali kita kurang memperhatikan antara pakaian kotor yang terkena najis dengan pakain kotor yang tidak terkena najis di campur. Sementara kapasitas air dalam mesin cuci tersebut terbatas kurang dari dua kulah.</p>
+                <p>Secara fiqih hal tersebut tidak diperkenankan, sebab ketika pakaian yang terkena najis dicampurkan dengan yang tidak terkena najis, maka semua pakaian yang ada dalam mesin cuci tersebut dihukumi najis.</p>
+                <p>Proses mencuci pakaian meskipun menggunakan sabun hanya akan membersihkan, namun tidak bisa mensucikan. Jika pakaian hasil mencuci tadi tidak suci, maka tidak bisa dipakai untuk melaksanakan shalat. Sehingga kita harus benar-benar memahami bagaimana cara mencuci pakaian di mesin cuci sesuai dengan syariat islam.</p>
+
+                <p>Mencuci pakaian  menggunakan mesin cuci sebaiknya terlebih dahulu dipisahkan antara pakaian kotor yang tidak terkena najis dengan pakaian kotor yang terkena najis.</p>
+                <p>Jika yang kita cuci adalah pakaian kotor yang tidak terkena najis maka boleh dengan cara apapun, karena saat itu kita hanya membersihkan pakaian dan bukan mensucikan pakaian dari najis.</p>
+                
+
+                <div class="detail-article-image">
+                    <img src="img/fiqih2detailblog.png" alt="wangi">
+                </div>
+
+                <h5>Cara Mensucikan Najis</h5>
+                <p>Cara mensucikan pakaian yang terkena najis  menggunakan mesin cuci, yaitu terlebih dahulu dengan menyucikan pakaian tersebut dari najis sebelum diberi sabun dengan cara sebagai berikut.<br>
+
+                    1. Jika najis dalam pakaian tersebut mudah hilang, maka pakaian dimasukan terlebih dahulu ke mesin cuci tanpa sabun. Namun jika najisnya termasuk jenis yang susah dihilangkan, maka hendaknya dibersihkan terlebih dahulu dengan sabun secara terpisah dengan pakaian lainnya sebelum dicampur dengan pakaian lain yang hanya kotor dan tidak najis. <br>
+                    2. Air dituangkan ke mesin cuci hingga merata ke seluruh pakaian (tidak harus sampai penuh atau tumpah atau meluber, yang terpenting adalah seluruh pakaian terendam air). Lalu, jalankan mesin cuci dan biarkan mesin cuci bekerja hingga diperkirakan air benar-benar telah menjangkau seluruh pakaian yang terkena najis.<br>
+                    3. Ganti air apabila terlihat air ada perubahan yang parah maka harus diganti. Akan tetapi, jika air tetap terlihat tanpa perubahan oleh pakaian yang terkena najis maka air tidak perlu diganti.<br>
+                    4. Bersihkan pakaian seperti biasa. Artinya, setelah itu kita bisa menggunakan sabun sesuka hati kita, karena saat ini kita bukan lagi mensucikan pakaian dari najis. Akan tetapi, kita hanya membersihkan pakaian dari kotoran saja. </p>
+                
+                <p>Yang harus diperhatikan adalah jika air terlebih dahulu berada di mesin cuci, sementara air tidak mencapai 2 qullah kemudian pakaian yang terkena najis dimasukan ke dalam air maka air akan menjadi najis dan pakaian pun tidak tersucikan.</p>
+                <p>Begitu juga jika air banyak (mencapai 2 qullah) kemudian dicampur dengan sabun hingga berubah bau atau warna atau rasa dari air tersebut. Maka, air tersebut adalah hanya suci, tetapi tidak bisa digunakan untuk mensucikan pakaian.</p>
+
+                <div class="detail-article-image">
+                    <img src="img/fiqih3detailblog.png" alt="wangi">
+                </div>
+    
+                    <h5>Batasan dalam Mensucikan Najis</h5>
+                    <p>Jika kita sudah membasuh sesuatu yang terkena najis, tetapi tetap tidak bisa hilang dari sifat-sifat najisnya (rasa, warna, dan bau) maka hal tersebut dimaafkan dengan catatan sebagai berikut.</p>
+                    <p>Pertama, dibedakan antara sifat yang berat dan ringan.<br>
+                        a. Sifat Berat <br>
+                            1. rasa saja, atau <br>
+                            2. gabungan antara warna dan bau.<br><br>
+                        b. Sifat Ringan<br>
+                            1. bau saja, atau <br>
+                            2 warna saja.
+                    </p>
+                    <br>
+    
+                    <p>Kedua, Jika yang tidak bisa dihilangkan adalah sifat ringan maka akan dimaafkan asalkan kita sudah berusaha dengan cara sebagai berikut.<br>
+                        1. Membasuhnya hingga tiga kali.<br>
+                        2. Menggosok najis tersebut.<br>
+                        3. Menggunakan bahan pembersih tambahan (seperti sabun atau dedaunan).<br><br>
+                        “Jika kita sudah berusaha dengan cara tersebut (di atas), tetapi warna najis atau bau masih ada maka hal itu dimaafkan. Para ulama memberi istilah batasan ini dengan istilah “ḥaddu at-ta‘assur” (حَدُّ التَّعَسُّرِ) (sulit dibersihkan dan disucikan).”
+                    </p>
+                    <br>
+    
+                    <p>Ketiga, jika yang tidak bisa dihilangkan adalah sifat berat najis, yaitu rasa atau berkumpulnya bau dan warna. Maka, disamping kita berusaha dengan cara menghilangkan sifat najis tersebut, kita harus menambah upaya dengan mengulang-ulang cara tersebut sampai tidak ada harapan hilangnya sifat najis tersebut (kecuali dengan dipotong).<br><br>
+                    Artinya, bukan kita harus memotong sesuatu yang terkena najis tersebut. Akan tetapi, karena begitu sulitnya najis tersebut untuk disucikan sehingga kita tidak bisa membuang najis tersebut, kecuali sesuatu yang terkena najis tersebut harus dipotong atau dibuang. Namun, pemotongan disini hanya perumpamaan saja, bukan harus benar-benar dipotong.<br><br>
+                        
+                    “Jika sudah demikian maka najis tersebut dimaafkan. Para ulama memberi istilah batasan ini dengan istilah “ḥaddu at-ta‘ażżur” (حَدُّ التَّعَذُّرِ) (tidak mungkin dihilangkan).”
+                </p>          
+              
+            </div>
+
+
+            <!-- rekomendasi blog lainnya -->
+            <div class="blog-container mt-5">
+                <h3>Baca selanjutnya</h3>
+                <div class="row">
+                    <a href="detailblog5.html" class="col-md-6">
+                        <div class="blog-card mb-4">
+                            <img src="img/blogalatlaundry.png" class="blog-card-img-top" alt="Image Description">
+                            <div class="blog-card-body">
+                                <h5 class="blog-card-title">Ini Hal yang Perlu Diperhatikan saat Gunakan Layanan Laundry</h5>
+                                <p class="blog-card-text"><span class="badge bg-primary">Tips Laundry</span></p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="detailblog1.html" class="col-md-6">
+                        <div class="blog-card mb-4">
+                            <img src="img/blogslime.png" class="blog-card-img-top" alt="Image Description">
+                            <div class="blog-card-body">
+                                <h5 class="blog-card-title">Cara Menghilangkan Noda Slime pada Pakaian</h5>
+                                <p class="blog-card-text"><span class="badge bg-primary">Tips Laundry</span></p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="detailblog2.html"class="col-md-6">
+                        <div class="blog-card mb-4">
+                            <img src="img/blogsetrika.png" class="blog-card-img-top" alt="Image Description">
+                            <div class="blog-card-body">
+                                <h5 class="blog-card-title">4 Bahan yang Ampuh Hilangkan Bekas Cetakan Setrika pada Pakaian</h5>
+                                <p class="blog-card-text"><span class="badge bg-primary">Tips Laundry</span></p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="detailblog3.html"class="col-md-6">
+                        <div class="blog-card mb-4">
+                            <img src="img/blogpakaianwangi.png" class="blog-card-img-top" alt="Image Description">
+                            <div class="blog-card-body">
+                                <h5 class="blog-card-title">7 Cara agar Pakaian Wangi, Pilih Deterjen yang Tepat!</h5>
+                                <p class="blog-card-text"><span class="badge bg-primary">Tips Laundry</span></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- rekomendasi blog lainnya -->
+        </div>
+        <!-- Detail Blog -->
+
+    
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer bg-dark wow fadeIn" data-wow-delay=".3s">
+            <div class="container pt-5 pb-4">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <a href="index.html">
+                            <!-- <img src="img/logonew.png" alt="HighTech Logo" class="img-fluid" style="height: 60px;"> -->
+                            <h1 class="text-white fw-bold d-block">Daily<span class="text-secondary">Wash</span> </h1>
+                        </a>
+                        <p class="mt-4 text-light">Menyediakan solusi laundry yang bersih, rapi, dan cepat dengan teknologi canggih dan tim profesional.</p>
+                        <div class="d-flex hightech-link">
+                            <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-facebook-f text-primary"></i></a>
+                            <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-twitter text-primary"></i></a>
+                            <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-instagram text-primary"></i></a>
+                            <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-0"><i class="fab fa-linkedin-in text-primary"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <a href="#" class="h3 text-secondary">Link</a>
+                        <div class="mt-4 d-flex flex-column short-link">
+                            <a href="indexlogin.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Beranda</a>
+                            <a href="about.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Tentang Kami</a>
+                            <a href="project.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Layanan</a>
+                            <a href="blog.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Artikel</a>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-3 col-md-6">
+                        <a href="#" class="h3 text-secondary">Help Link</a>
+                        <div class="mt-4 d-flex flex-column help-link">
+                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Terms Of use</a>
+                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Privacy Policy</a>
+                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Helps</a>
+                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>FQAs</a>
+                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contact</a>
+                        </div>
+                    </div> -->
+                    <div class="col-lg-3 col-md-6">
+                        <a href="#" class="h3 text-secondary">Hubungi Kami</a>
+                        <div class="text-white mt-4 d-flex flex-column contact-link">
+                            <a href="#" class="pb-3 text-light border-bottom border-primary"><i class="fas fa-map-marker-alt text-secondary me-2"></i> Gubeng Airlangga II, Surabaya</a>
+                            <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-phone-alt text-secondary me-2"></i> (031) 5678910</a>
+                            <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-envelope text-secondary me-2"></i> daiwash@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="text-light mt-5 mb-4">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start">
+                        <span class="text-light"><a href="#" class="text-secondary"><i class="fas fa-copyright text-secondary me-2"></i>2024 DailyWash</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        <!-- <span class="text-light">Designed By<a href="https://htmlcodex.com" class="text-secondary">HTML Codex</a> Distributed By <a href="https://themewagon.com">ThemeWagon</a></span> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i class="fa fa-arrow-up text-white"></i></a>
+
+            
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
+
+
+
+
+

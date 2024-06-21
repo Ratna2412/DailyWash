@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>e-Laundy Daily Wash</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Spinner Start -->
+        <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Topbar Start -->
+        <div class="container-fluid bg-dark py-2 d-none d-md-flex" style="top: 0; position: fixed;  z-index: 1001;">
+            <div class="container">
+                <div class="d-flex justify-content-between topbar">
+                    <div class="top-info">
+                        <small class="me-3 text-white-50"><a href="#"><i class="fas fa-map-marker-alt me-2 text-secondary"></i></a>Gubeng Airlangga II, Surabaya</small>
+                        <small class="me-3 text-white-50"><a href="#"><i class="fas fa-envelope me-2 text-secondary"></i></a>daiwash@gmail.com</small>
+                    </div>
+                    <div id="note" class="text-secondary d-none d-xl-flex"><small>Diskon 30% member baru</small></div>
+                    <div class="top-link">
+                        <a href="index.html" class="btn btn-primary btn-sm rounded-pill me-2">Keluar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+        
+        <!-- Navbar Start -->
+        <div class="container-fluid bg-primary">
+
+            <div class="container">
+                <nav class="navbar navbar-dark navbar-expand-lg py-0">
+                    <a href="indexlogin.html" class="navbar-brand">
+                        <h1 class="text-white fw-bold d-block">Daily<span class="text-secondary">Wash</span> </h1>
+                        <!-- <img src="img/logonew.png" alt="HighTech Logo" class="img-fluid"> -->
+                    </a>
+                    <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
+                        <div class="navbar-nav ms-auto mx-xl-auto p-0">
+                            <a href="indexlogin.html" class="nav-item nav-link active">Beranda</a>
+                            <a href="about.html" class="nav-item nav-link">Tentang Kami</a>
+                            <a href="project.html" class="nav-item nav-link">Layanan</a>
+                            <!-- <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Layanan</a>
+                                <div class="dropdown-menu rounded">
+                                    <a href="project.html" class="dropdown-item">Layanan</a>
+                                    <a href="#" class="dropdown-item">Keranjang</a>
+                                    <a href="#" class="dropdown-item">Pembayaran</a>
+                                    <a href="#" class="dropdown-item">Riwayat Pembayaran</a>
+                                </div>
+                            </div> -->
+                            <a href="blog.html" class="nav-item nav-link">Artikel</a>
+                            <a href="keranjang.html" class="nav-item nav-link d-md-none">Keranjang</a>
+                            <a href="history_transaksi.html" class="nav-item nav-link d-md-none">Riwayat Pemesanan</a>
+                            <a href="index.html" class="nav-item nav-link d-md-none">Keluar</a>
+                        </div>
+                    </div>
+                    <div class="d-none d-xl-flex flex-shirink-0">
+                        <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4">
+                            <a href="" class="position-relative animated tada infinite">
+                                <i class="fa fa-phone-alt text-white fa-2x"></i>
+                                <div class="position-absolute" style="top: -7px; left: 20px;">
+                                    <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="d-flex flex-column pe-4 border-end">
+                            <span class="text-white-50">Punya pertanyaan?</span>
+                            <span class="text-secondary">Hubungi: (031) 5678910</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center ms-4 ">
+                            <!-- <a href="#"><i class="fa-regular fa-cart-shopping"></i></a> -->
+                            <a href="keranjang.html"><i class="bi bi-cart text-white fa-2x" style="font-size: 25px;"></i> </a>
+                            <a href="history_transaksi.html"><i class="bi bi-clock-history text-white fa-2x" style="font-size: 25px; margin-left: 20px;"></i> </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+        <!-- Detail Blog -->
+        <div class="container-detail-article mt-5">
+            <h2>Cara Menghilangkan Noda Slime pada Pakaian</h2>
+            <div class="detail-article-meta">
+                <div class="author">
+                    <img src="img/profilkosong.jpg" alt="Author Photo">
+                    <span>Bella Nurmaya Putri</span>
+                </div>
+                <span class="date">7 April 2024</span>
+            </div>
+            <div class="detail-article-image">
+                <img src="img/slimedetailblog.png" alt="Ulang Tahun Tokopedia">
+            </div>
+            <div class="detail-article-content">
+                <p>Slime memang memiliki banyak manfaat, tetapi jika mainan ini sudah lengket di baju membuat kesal.
+                Sekarang, tidak perlu kesal dan khawatir lagi karena ada cara menghilangkan slime di baju yang ampuh dan praktis.</p>
+
+                <h5>1. Siapkan Tempat Pembersih</h5>
+                <p>Cara menghilangkan slime di baju yang pertama adalah siapkan tempat. Tekstur slime yang lengket membuat mainan ini mudah berpindah ke kain dan permukaan lain. Jadi sebaiknya cari tempat yang luas dan tidak ada kain lainnya. Moms bisa membersihkannya di wastafel, di meja dapur, atau di luar. Jangan lupa letakkan koran atau handuk bekas untuk melindungi permukaan agar tidak lengket.</p>
+
+                <h5>2. Hilangkan Slime Sebisa Mungkin</h5>
+                <p>Cara membersihkan slime di baju selanjutnya ada hilangkan slime sebanyak dan sebisa mungkin. Moms jika menemukan slime di pakaian jangan langsung panik, karena bisa membuat Moms pusing dan cepat menyerah.
+                Kerjakan dengan tenang, ambil slime dengan tangan. Jika slime sudah mengeras, ini mungkin sedikit lebih sulit. Luangkan beberapa menit untuk mengerjakan slime sebelum melanjutkan ke langkah berikutnya.</p>
+
+                <h5>3. Hilangkan dengan Cuka</h5>
+                <p>Cuka putih sangat cocok untuk noda slime yang lama dan baru. Jadi Moms bisa mencoba menggunakan metode ini. Caranya cukup mudah, oleskan cuka putih langsung ke noda. Moms hanya perlu menuangkan di area yang terkena slime, jadi jangan sampai seluruh pakaian diberikan cuka. Biarkan cuka meresap pada noda selama beberapa menit. Gosok noda dengan lembut menggunakan sikat gigi bersih atau sikat pembersih lembut. Gunakan gerakan lembut untuk menghindari kerusakan pada baju Untuk baju yang lebih halus, bersihkan pakaian dengan kain pembersih atau handuk kertas. Bilas pakaian dengan air hangat untuk menghilangkan cuka dan sisa lendir yang tersisa. Jika lendir telah hilang, masukkan pakaian ke dalam mesin cuci dan ikuti petunjuk perawatan pada kemasan. Jika lendir tetap ada, ulangi langkah-langkah tersebut beberapa kali.
+
+                <h5>4. Hilangkan dengan Cairan Pembersih</h5>
+                <p>Cara membersihkan slime di baju selanjutnya adalah menggunakan cairan pembersih. Cara ini hampir sama dengan menggunakan cuka putih, hanya saja cairan pembersih sebagai gantinya. Untuk slime yang dibuat dengan lem, aseton mungkin bisa digunakan dengan baik. Moms bisa menggunakan kapas dan mengusap noda dengan lembut. Moms perhatikan ya aseton dapat mengubah warna kain, sebaiknya oleskan uji pada area kecil terlebih dahulu untuk mencegah terjadinya kelunturan.</p>
+
+                <h5>5. Hilangkan Slime Setelah Dicuci</h5>
+                <p>Prinsipnya adalah noda lebih mudah dibersihkan dari baju setelah dicuci. Untuk pakaian yang telah dicuci, tetapi belum dikeringkan dengan mesin cuci, Moms harus mengikuti metode cuka putih. Ini bisa menghilangkan noda yang belum keluar saat mencuci.</p>
+
+                <h5>6. Hilangkan Slime yang Mengering di Baju</h5>
+                <p>Jika Moms menemukan bahwa slime telah mengering, atau telah mengeringkan pakaian dengan slime yang masih menempel kuat di baju, jangan panik.
+                Moms bisa ikuti cara-cara berikut ini.
+                1. Gunakan kuku Moms atau penjepit untuk mengupas slime yang mengering.
+                2. Ambil es batu dan gosokkan pada noda slime yang tersisa.
+                3. Cara lainnya, basahi sedikit slime lalu masukkan baju ke dalam kantong freezer.
+                4. Masukkan kantong ke dalam freezer sampai slime mengeras. Setelah beku, kupas noda slime dengan hati-hati.</p>
+
+                <h5>7. Gunakan Sabun Cuci Piring</h5>
+                <p>Cara menghilangkan slime di baju selain detergen dan cuka, Moms bisa menggunakan sabun cuci piring. Sabun cuci piring tidak hanya efektif menghilangkan noda di perabotan rumah tangga, tetapi juga bisa membersihkan baju yang terkena slime dari sisa noda yang masih menempel. Caranya seperti biasa, Moms bersihkan dahulu noda slime menggunakan kuku jari tangan. Selanjutnya, tuangkan sabun cuci piring ke area yang terkena noda slime.</p>
+
+                <h5>8. Gunakan Detergen Khusus</h5>
+                <p>Jika Moms sudah mencoba menggunakan cuka, cairan pembersih, dan aseton tetapi tidak berhasil, mungkin ada baiknya mengeluarkan sejumlah uang untuk produk pembersih yang lebih intensif. Saat ini sudah banyak detergen khusus untuk menghilangkan sisa noda dan permen karet di kain atau baju. Namun, Moms harus mengeluarkan uang sedikit lebih banyak untuk membelinya.</p>
+
+                <p>Moms cara menghilangkan slime di baju mudah bukan?</p>
+                <p>Semoga cara tersebut dapat membantu untuk membersihkan slime di baju ya, selamat mencoba Moms!</p>
+            </div>
+
+
+            <!-- rekomendasi blog lainnya -->
+            <div class="blog-container mt-5">
+                <h3>Baca selanjutnya</h3>
+                <div class="row">
+                    <a href="detailblog2.html" class="col-md-6">
+                        <div class="blog-card mb-4">
+                            <img src="img/blogsetrika.png" class="blog-card-img-top" alt="Image Description">
+                            <div class="blog-card-body">
+                                <h5 class="blog-card-title">4 Bahan yang Ampuh Hilangkan Bekas Cetakan Setrika pada Pakaian</h5>
+                                <p class="blog-card-text"><span class="badge bg-primary">Tips Laundry</span></p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="detailblog3.html" class="col-md-6">
+                        <div class="blog-card mb-4">
+                            <img src="img/blogpakaianwangi.png" class="blog-card-img-top" alt="Image Description">
+                            <div class="blog-card-body">
+                                <h5 class="blog-card-title">7 Cara agar Pakaian Wangi, Pilih Deterjen yang Tepat!</h5>
+                                <p class="blog-card-text"><span class="badge bg-primary">Tips Laundry</span></p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="detailblog4.html"class="col-md-6">
+                        <div class="blog-card mb-4">
+                            <img src="img/blogfikih.png" class="blog-card-img-top" alt="Image Description">
+                            <div class="blog-card-body">
+                                <h5 class="blog-card-title">Fiqih mesin Cuci: Panduan Praktis Mencuci Pakaian Menggunakan Mesin Cuci Sesuai Syariat Islam</h5>
+                                <p class="blog-card-text"><span class="badge bg-primary">Tips Laundry Islami</span></p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="detailblog5.html" class="col-md-6">
+                        <div class="blog-card mb-4">
+                            <img src="img/blogalatlaundry.png" class="blog-card-img-top" alt="Image Description">
+                            <div class="blog-card-body">
+                                <h5 class="blog-card-title">Ini Hal yang Perlu Diperhatikan saat Gunakan Layanan Laundry</h5>
+                                <p class="blog-card-text"><span class="badge bg-primary">Tips Laundry</span></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- rekomendasi blog lainnya -->
+        </div>
+        <!-- Detail Blog -->
+
+    
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer bg-dark wow fadeIn" data-wow-delay=".3s">
+            <div class="container pt-5 pb-4">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <a href="index.html">
+                            <!-- <img src="img/logonew.png" alt="HighTech Logo" class="img-fluid" style="height: 60px;"> -->
+                            <h1 class="text-white fw-bold d-block">Daily<span class="text-secondary">Wash</span> </h1>
+                        </a>
+                        <p class="mt-4 text-light">Menyediakan solusi laundry yang bersih, rapi, dan cepat dengan teknologi canggih dan tim profesional.</p>
+                        <div class="d-flex hightech-link">
+                            <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-facebook-f text-primary"></i></a>
+                            <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-twitter text-primary"></i></a>
+                            <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-instagram text-primary"></i></a>
+                            <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-0"><i class="fab fa-linkedin-in text-primary"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <a href="#" class="h3 text-secondary">Link</a>
+                        <div class="mt-4 d-flex flex-column short-link">
+                            <a href="indexlogin.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Beranda</a>
+                            <a href="about.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Tentang Kami</a>
+                            <a href="project.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Layanan</a>
+                            <a href="blog.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Artikel</a>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-3 col-md-6">
+                        <a href="#" class="h3 text-secondary">Help Link</a>
+                        <div class="mt-4 d-flex flex-column help-link">
+                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Terms Of use</a>
+                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Privacy Policy</a>
+                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Helps</a>
+                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>FQAs</a>
+                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contact</a>
+                        </div>
+                    </div> -->
+                    <div class="col-lg-3 col-md-6">
+                        <a href="#" class="h3 text-secondary">Hubungi Kami</a>
+                        <div class="text-white mt-4 d-flex flex-column contact-link">
+                            <a href="#" class="pb-3 text-light border-bottom border-primary"><i class="fas fa-map-marker-alt text-secondary me-2"></i> Gubeng Airlangga II, Surabaya</a>
+                            <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-phone-alt text-secondary me-2"></i> (031) 5678910</a>
+                            <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-envelope text-secondary me-2"></i> daiwash@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="text-light mt-5 mb-4">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start">
+                        <span class="text-light"><a href="#" class="text-secondary"><i class="fas fa-copyright text-secondary me-2"></i>2024 DailyWash</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        <!-- <span class="text-light">Designed By<a href="https://htmlcodex.com" class="text-secondary">HTML Codex</a> Distributed By <a href="https://themewagon.com">ThemeWagon</a></span> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+            <!-- Back to Top -->
+            <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i class="fa fa-arrow-up text-white"></i></a>
+
+            
+            <!-- JavaScript Libraries -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="lib/wow/wow.min.js"></script>
+            <script src="lib/easing/easing.min.js"></script>
+            <script src="lib/waypoints/waypoints.min.js"></script>
+            <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+            <!-- Template Javascript -->
+            <script src="js/main.js"></script>
+    </body>
+
+</html>
+
+
+
+
+

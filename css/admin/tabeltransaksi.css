@@ -1,0 +1,271 @@
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin-right: 20px;
+    background-color: #f4f4f9;
+    display: flex;
+}
+
+/* Container styling */
+.container {
+    /* width: calc(100% - 10px); */
+    width: 100%;
+    margin-left: 25px;
+    margin-right: 25px;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Button styling */
+.btn-tambah {
+    background-color: #118A95;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    font-size: 11px;
+}
+
+.btn-tambah:hover {
+    background-color: #3CD898;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #f8f9fa;
+}
+
+th, td {
+    padding: 10px 5px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 10px;
+}
+
+th {
+    font-weight: bold;
+}
+
+/* Status button styling */
+.status {
+    padding: 5px 10px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 9px;
+}
+
+.status.proses {
+    background-color: #17a2b8; 
+}
+
+.status.selesai {
+    background-color: #28a745;
+}
+
+.status.ambil {
+    background-color: #3800b2;
+}
+
+.dibayar {
+    background-color: #28a745;
+    padding: 5px 10px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 9px;
+    width: 45px;
+}
+
+.belum-dibayar {
+    background-color: #dc3545;
+    padding: 5px 10px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 9px;
+    width: 45px;
+}
+
+/* Button styling */
+.btn {
+    padding: 6px 10px;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+    font-size: 9px;
+    margin-bottom: 2.5px;
+}
+
+.btn.detail {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn.detail:hover {
+    background-color: #008f21;
+}
+
+.btn.proses {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.btn.proses:hover {
+    background-color: #008397;
+}
+
+.btn.edit {
+    background-color: #ffc107;
+    color: white;
+}
+
+.btn.edit:hover {
+    background-color: #daa300;
+}
+
+.btn.hapus {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn.hapus:hover {
+    background-color: #be0013;
+}
+
+
+
+
+/* Table controls styling */
+.table-controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.controls-left {
+    display: flex;
+    align-items: center;
+}
+
+.controls-left label {
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.controls-left select {
+    margin-right: 5px;
+    height: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.pages {
+    display: flex;
+    gap: 5px;
+    margin-right: 11px;
+}
+
+.pages button {
+    font-size: 13px;
+}
+
+.page {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.page.active, .page:hover {
+    background-color: #118A95;
+    color: white;
+    border-color: #118A95;
+}
+
+.pagination {
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.total-amount {
+    font-size: 15px;
+    font-weight: bold;
+    color: #118A95;
+    text-align: right;
+    margin-right: 11px;
+}
+
+/* Media query untuk tampilan mobile */
+@media only screen and (max-width: 768px) {
+    /* Container */
+    .container {
+        overflow-x: auto;
+        margin: 0 10px;
+        padding: 20px;
+    }
+
+    /* Tambahkan overflow-x: auto; pada div yang mengelilingi tabel */
+    .table-wrapper {
+        overflow-x: auto;
+        margin-bottom: 20px; /* Tambahkan margin bawah untuk memisahkan dari kontrol tabel */
+    }
+
+    /* Status button */
+    .status,
+    .dibayar,
+    .belum-dibayar {
+        width: auto;
+        padding: 5px 8px;
+        font-size: 10px;
+    }
+
+    /* Tombol */
+    .btn {
+        padding: 4px 8px;
+        font-size: 10px;
+    }
+
+    .pagination {
+        text-align: center;
+    }
+
+    .pagination span {
+        margin-bottom: 8px;
+        text-align: center;
+        margin-left: 35px;
+        margin-top: 10px;
+    } 
+
+    /* Kontrol tabel */
+    .table-controls {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pages button {
+        font-size: 11px;
+        margin-top: 10px;
+    }
+
+    .total-amount {
+        font-size: 15px;
+        margin-right: 0;
+        text-align: center;
+        margin-top: 20px;
+    }
+}
